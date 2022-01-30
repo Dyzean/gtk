@@ -1,0 +1,79 @@
+window.thunar {
+	background: none;
+
+	treeview {
+		background: none;
+	}
+
+	grid {
+		*:selected,
+		*:active {
+			background: $background-3;
+			border-radius: 3px;
+		}
+	}
+
+	.sidebar {
+		background-color: $background-2;
+		padding: 1rem;
+	}
+
+	treeview {
+		padding: 3px;
+    color: $foreground-color;
+		&:selected {
+			background: $primary-accent;
+      color: $selected-foreground;
+		}
+	}
+
+	.frame {
+		border: 0;
+	}
+
+	toolbar {
+    background: $background-2;
+		padding: 5px 0;
+
+		box {
+			padding: 5px;
+		}
+
+		entry {
+			background: $background-1;
+			border-radius: 4px;
+      margin: 2px 2em 2px 1em;
+
+      image {
+        background-image: image(rgba(255, 255, 255, 0));
+      }
+		}
+	}
+
+  toolbar * {
+		background: none;
+	}
+
+  statusbar {
+    margin: 0 -10px;
+    padding: 0 4px;
+    border-top: 0;
+  }
+
+	paned grid {
+		background: $background-1;
+	}
+
+	/* hide separator */
+	separator {
+		background-image: image($background-2);
+		background-size: 1px 1px;
+		background-position: center center;
+	}
+}
+
+// XFCE Notify window
+#XfceNotifyWindow {
+  buttonbox { padding: 0; }
+  label#summary { font-weight: bold; }
+}

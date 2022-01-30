@@ -1,0 +1,8 @@
+label {
+  &.dim-label, &:disabled { opacity: 0.3; }
+
+  selection {
+    background: $primary-accent;
+    color: $background-3;
+  }
+}

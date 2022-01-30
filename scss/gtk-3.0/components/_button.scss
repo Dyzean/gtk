@@ -1,0 +1,30 @@
+button {
+  transition: background-color 100ms ease-in;
+  background: $background-3;
+  padding: 8px;
+
+  &:disabled { opacity: 0.3; }
+
+  &:checked, &.suggested-action {
+    background: $primary-accent;
+    color: lighten($primary-accent, 40%);
+  }
+
+  &.destructive-action {
+    background: $accent-1;
+    color: lighten($accent-1, 40%);
+  }
+
+  &.circular {
+    border-radius: 100%;
+    padding: 8px;
+  }
+
+  &.flat {
+    background: transparent;
+    color: lighten($disabled-foreground, 6%);
+
+    &:hover { color: lighten($foreground-color, 10%); }
+    &:checked { color: lighten($foreground-color, 12%); }
+  }
+}

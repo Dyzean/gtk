@@ -1,0 +1,24 @@
+$background-1: #1a1b26; // Primary background
+$background-2: darken($background-1, 5%); // Dark bakground for sidebars/topbars etc
+$background-3: lighten($background-1, 4%); // Light background for entry, selection etc.
+
+$accent-1: #f7768e;
+$accent-2: #ff9e64;
+$accent-3: #e0af68;
+$accent-4: #9ece6a;
+$accent-5: #7dcfff;
+$accent-6: #7aa2f7;
+$accent-7: #bb9af7;
+$accent-8: #8f67db;
+
+$primary-accent: $accent-6;
+$secondary-accent: $accent-4;
+
+$foreground-color: #a9b1d6;
+$selected-foreground: $background-1;
+$disabled-foreground: #565f89;
+
+$corner-radius: 8px;
+
+// TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
+@define-color borders #{"" +$background-2};

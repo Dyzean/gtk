@@ -1,0 +1,25 @@
+entry {
+  transition: all 100ms ease-in-out;
+  background: $background-3;
+  border: 2px solid transparent;
+  padding: 6px;
+  border-radius: 0;
+
+  &:focus {
+    border-color: $primary-accent;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  image {
+    &.left { margin-right: 8px; }
+    &.right { margin-left: 8px; }
+  }
+
+  selection { 
+    background: $primary-accent;
+    color: $background-3;
+  }
+}

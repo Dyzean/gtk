@@ -1,0 +1,9 @@
+progressbar {
+
+  trough {
+    background: $background-3;
+  }
+
+  &.horizontal progress { background-color: $primary-accent; }
+  &.vertical progress { background-color: $primary-accent; }
+}
